@@ -5,6 +5,7 @@ import { openmrsObservableFetch } from "../openmrs-fetch";
 import {
   FetchResponse,
   NewVisitPayload,
+  PrintDischargeReportPayload,
   UpdateVisitPayload,
   Visit,
 } from "../types";
@@ -70,6 +71,23 @@ export function updateVisit(
     },
     body: payload,
   });
+}
+
+export function printDischargeReport(
+  payload: PrintDischargeReportPayload,
+  abortController: AbortController
+): Observable<any> {
+  return openmrsObservableFetch(
+    `/ws//module/report/discharge?patientUuid=${payload.patientUuid}&visitUuid=${payload.visitUuid}`,
+    {
+      signal: abortController.signal,
+      method: "GET",
+      headers: {
+        "Content-type": "application/pdf",
+        Accept: "*/*",
+      },
+    }
+  );
 }
 
 export const getStartedVisit = new BehaviorSubject<VisitItem | null>(null);

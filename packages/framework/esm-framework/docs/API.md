@@ -18,6 +18,7 @@
 - [makeUrl](API.md#makeurl)
 - [openmrsFetch](API.md#openmrsfetch)
 - [openmrsObservableFetch](API.md#openmrsobservablefetch)
+- [printDischargeReport](API.md#printdischargereport)
 - [refetchCurrentUser](API.md#refetchcurrentuser)
 - [saveVisit](API.md#savevisit)
 - [setSessionLocation](API.md#setsessionlocation)
@@ -634,7 +635,7 @@ ___
 
 #### Defined in
 
-[packages/framework/esm-api/src/shared-api-objects/visit-utils.ts:12](https://github.com/openmrs/openmrs-esm-core/blob/main/packages/framework/esm-api/src/shared-api-objects/visit-utils.ts#L12)
+[packages/framework/esm-api/src/shared-api-objects/visit-utils.ts:13](https://github.com/openmrs/openmrs-esm-core/blob/main/packages/framework/esm-api/src/shared-api-objects/visit-utils.ts#L13)
 
 ___
 
@@ -654,7 +655,7 @@ ___
 
 #### Defined in
 
-[packages/framework/esm-api/src/shared-api-objects/visit-utils.ts:75](https://github.com/openmrs/openmrs-esm-core/blob/main/packages/framework/esm-api/src/shared-api-objects/visit-utils.ts#L75)
+[packages/framework/esm-api/src/shared-api-objects/visit-utils.ts:93](https://github.com/openmrs/openmrs-esm-core/blob/main/packages/framework/esm-api/src/shared-api-objects/visit-utils.ts#L93)
 
 ___
 
@@ -1003,7 +1004,7 @@ ___
 
 #### Defined in
 
-[packages/framework/esm-api/src/shared-api-objects/visit-utils.ts:21](https://github.com/openmrs/openmrs-esm-core/blob/main/packages/framework/esm-api/src/shared-api-objects/visit-utils.ts#L21)
+[packages/framework/esm-api/src/shared-api-objects/visit-utils.ts:22](https://github.com/openmrs/openmrs-esm-core/blob/main/packages/framework/esm-api/src/shared-api-objects/visit-utils.ts#L22)
 
 ___
 
@@ -1154,6 +1155,27 @@ To cancel the network request, simply call `subscription.unsubscribe();`
 
 ___
 
+### printDischargeReport
+
+▸ **printDischargeReport**(`payload`, `abortController`): `Observable`<`any`\>
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `payload` | [`PrintDischargeReportPayload`](interfaces/PrintDischargeReportPayload.md) |
+| `abortController` | `AbortController` |
+
+#### Returns
+
+`Observable`<`any`\>
+
+#### Defined in
+
+[packages/framework/esm-api/src/shared-api-objects/visit-utils.ts:76](https://github.com/openmrs/openmrs-esm-core/blob/main/packages/framework/esm-api/src/shared-api-objects/visit-utils.ts#L76)
+
+___
+
 ### refetchCurrentUser
 
 ▸ **refetchCurrentUser**(): `Promise`<`unknown`\>
@@ -1197,7 +1219,7 @@ ___
 
 #### Defined in
 
-[packages/framework/esm-api/src/shared-api-objects/visit-utils.ts:46](https://github.com/openmrs/openmrs-esm-core/blob/main/packages/framework/esm-api/src/shared-api-objects/visit-utils.ts#L46)
+[packages/framework/esm-api/src/shared-api-objects/visit-utils.ts:47](https://github.com/openmrs/openmrs-esm-core/blob/main/packages/framework/esm-api/src/shared-api-objects/visit-utils.ts#L47)
 
 ___
 
@@ -1280,7 +1302,7 @@ ___
 
 #### Defined in
 
-[packages/framework/esm-api/src/shared-api-objects/visit-utils.ts:60](https://github.com/openmrs/openmrs-esm-core/blob/main/packages/framework/esm-api/src/shared-api-objects/visit-utils.ts#L60)
+[packages/framework/esm-api/src/shared-api-objects/visit-utils.ts:61](https://github.com/openmrs/openmrs-esm-core/blob/main/packages/framework/esm-api/src/shared-api-objects/visit-utils.ts#L61)
 
 ___
 

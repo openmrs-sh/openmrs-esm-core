@@ -39,3 +39,8 @@ export interface VisitType {
   display: string;
   name?: string;
 }
+
+export interface PrintDischargeReportPayload {
+  patientUuid: string;
+  visitUuid: string;
+}
